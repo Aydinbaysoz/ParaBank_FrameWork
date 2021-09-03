@@ -6,7 +6,7 @@ import io.cucumber.java.Scenario;
 import testbase.BaseClass;
 import utils.CommonMethod;
 
-public class Hooks {
+public class Hooks extends CommonMethod{
 
     @Before
     public void startTest(){
@@ -16,12 +16,15 @@ public class Hooks {
 
     @After
     public void endTest(Scenario scenario){
+
         byte[] screenshot;
         if (scenario.isFailed()){
+            logger.info("Failed");
 
             screenshot=CommonMethod.takeScreen("failed/"+scenario.getName());
         }else{
             screenshot=CommonMethod.takeScreen("passed/"+scenario.getName());
+            logger.info("Passed");
         }
 
 

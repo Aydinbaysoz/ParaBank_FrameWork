@@ -25,6 +25,7 @@ public class LoginFeatureStepDefinitions extends CommonMethod {
 //        sendText(login.password_field,ConfigsReader.getPropertiesValue("password"));
 //        click(login.login_button);
         login.logininSuccessfuly();
+
         logger.info("Started");
 
     }
