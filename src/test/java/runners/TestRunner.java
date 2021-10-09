@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         ,plugin ={"pretty","html:target/cucumber-default-reports.html",
         "rerun:target/failed-test","json:target/cucumber.json",
 
-"rerun:target/failed-test","xlm:target/cucumber.xlm"}
+"rerun:target/failed-test","json:target/cucumber.xlm"}
 
 
 

@@ -9,7 +9,7 @@ import utils.constants;
 
 import java.util.concurrent.TimeUnit;
 
-public class BaseClass {
+public abstract class BaseClass {
 
     public static  WebDriver driver;
 
